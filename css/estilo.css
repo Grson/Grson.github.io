@@ -1,0 +1,1256 @@
+
+/*  Permite incluir el relleno y el borde en el ancho y alto total de un elemento.*/
+*{
+	box-sizing: border-box;
+}
+
+
+.CV_PDF{
+	
+	width: 100vh;
+	height: 100vh;
+
+
+}
+
+
+/* Tipo de letra*/
+html{
+	font-family: 'Oswald', sans-serif;
+}
+
+
+/*  Color de fondo */
+body {
+	background-image: linear-gradient(to left, rgb(128, 128, 128), white);
+}
+
+
+
+
+
+
+/* ------------------------------------------ */
+
+/* Scroll Personalizado */
+
+
+/* Tamaño y color de fondo de la barra */
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background: #FFFFFF;
+}
+
+
+/*Barra de dslizamiento*/
+body::-webkit-scrollbar-thumb {
+	background: #043C8A;
+	border-radius: 15px;
+}
+
+/* ------------------------------------------ */
+
+
+
+
+
+
+
+
+/* Medidas para el iframe  */
+.Principal{
+    margin-left: 0%;
+    width: 100%;
+    height: calc(100vh - 3px) !important;
+}
+
+
+
+/* Medidas para la barra lateral */
+.lateral{
+	background-color: #043C8A;
+ 	bottom: 0;
+ 	left: 0;
+ 	padding: 1em;
+ 	position: fixed;
+ 	top: 0;
+ 	width:23%;
+}
+
+
+
+/* Medidas del circulo de la fotografia */
+.perfil_circulo{
+	border-radius: 55%;
+	height: 55px;
+	overflow: hidden;
+	margin: 0;
+	width: 55px;
+
+}
+
+
+.perfil_foto{
+	width: 100%;
+}
+
+.perfil_nombres{
+	color: #fff;
+	font-size: 20px;
+	margin-left: .5em;
+	width: 250px;
+}
+
+.perfil_nombres, .perfil_circulo{
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+
+	/*  Propiedades para la informacion */
+ 	.informacion {
+ 		color: #F5E9E9;
+ 		position: absolute;
+ 		bottom: 1em;
+ 	}
+
+ 	.informacion_titulo{
+ 		font-size: 18px;
+ 	}
+
+ 	.habilidades{
+ 		padding: 0;
+ 	}
+
+ 	.habilidad{
+ 		background-color: #6E6E6E;
+ 		color: #EDEEF2;
+ 		display: inline-block;
+ 		font-size: 15px;
+ 		text-transform: uppercase;
+ 		padding: .5em;
+ 	}
+
+
+
+	.habilidad_proyecto{
+		background-color:#DE0B43 ;
+		color: #DE0B43;
+		display: inline-block;
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: .5em;
+	}
+
+
+ 	.proyectos {
+ 	margin-left: 350px;
+	padding: 1em;
+	display: table;
+
+ 	}
+
+
+
+ 	.proyectosCV {
+ 			margin-left: 370px;
+		    width: 70%;
+		    height: calc(100vh - 3px) !important;
+
+ 	}
+
+
+
+
+
+
+
+	/* Texto adentro de imagen khan academy y udemy*/
+	.TextoEnImagen {
+	  background-color: rgba(255, 255, 255, 0.3);
+	  border-radius: 10px;
+	  font-family: sans-serif;
+	  text-align: center;
+
+	 /*Propiedades para mostrar el texto adentro de la imagen de forma difuminido*/
+	  backdrop-filter: blur(7px);
+	  -webkit-backdrop-filter: blur(10px);
+
+
+	  border: 2px solid #043C8A;
+	  color: blue;
+	  position: relative;
+	  left: 50%;
+
+	   /* Posicion del texto adentro de la imagen  */
+	  transform: translate(-50%, -345%);
+	  text-align: center;
+
+	}
+
+
+
+
+
+	/* Texto adentro de imagen curriculum vitae*/
+	.TextoEnImagenCV {
+	  background-color: rgba(255, 255, 255, 0.3);
+	  border-radius: 10px;
+	  font-family: sans-serif;
+	  width: 50%;
+ 		height: 50%;
+
+	 /*Propiedades para mostrar el texto adentro de la imagen de forma difuminido*/
+	  backdrop-filter: blur(7px);
+	  -webkit-backdrop-filter: blur(10px);
+
+
+	  border: 2px solid #043C8A;
+	  color: blue;
+	  position: relative;
+	  left: 50%;
+
+	   /* Posicion del texto adentro de la imagen  */
+	  transform: translate(-100%, -345%);
+	  text-align: center;
+
+	}
+
+
+
+
+
+
+
+ 	.proyecto {
+ 		display: table-cell;
+ 		width: 50%;
+ 		padding: 1em;
+ 	}
+
+ 	.proyecto_imagen {
+ 		width: 100%;
+ 	}
+
+
+
+
+
+ 	/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+ 	/* Diseño para el boton de khan academy */
+	/* Propiedades para el link de direccionamiento para una página */
+ 	
+	/*  Diseño del botón */
+ 	.DiseñoBoton{
+	    position: relative;
+	    display: inline-block;
+	    
+	    color: #fff;
+
+	    /*  Espacio entre letras */
+	    letter-spacing: 1px;
+	    /* Se elimna el subrayado por defecto  */
+	    text-decoration: none;
+
+	    /*  Tamaño del texto */
+	    font-size: 12px;
+
+	    /* Oculta los elementos que estan afuera del contenedor  */
+	    overflow: hidden;
+
+	    /*  Tiempo del efecto */
+	    transition: 0.1s;
+	 
+	    /*  Color para resaltar el texto del botón*/
+	    background-color:#179C08;
+		
+	}
+
+
+
+	/*  Color del fondo del efecto */
+	.DiseñoBoton:hover{
+	    background: #043C8A;
+
+
+	    /*  Sombra */
+	    box-shadow: 0 0 40px #043C8A, 0 0 40px #043C8A, 0 0 80px #043C8A;
+	   
+	   /*  Tiemp de transición  */
+	    transition-delay: 0.5s;
+	 }
+
+
+	 /* Propiedades de span */
+	.DiseñoBoton span{
+	    position: absolute;
+	    display: block;
+	}
+
+
+	/*  Propiedas de span 1  */
+	#span1{
+	    top: 0;
+	    left: -100%;
+	    width: 100%;
+	    height: 2px;
+	    background: linear-gradient(90deg, transparent,#043C8A);
+	 }
+
+
+	 /*  Lineas de transición */
+	 .DiseñoBoton:hover #span1{
+	    left: 100%;
+	    transition: 0.5s;
+	}
+
+
+
+
+
+	/*  Linea de derecha a izquierda */
+	 #span3{
+	    bottom: 0;
+	    right: -100%;
+	    width: 100%;
+	    height: 2px;
+	    background: linear-gradient(270deg, transparent,#043C8A);
+	}
+
+	/*  Lineas de transición */
+	 .DiseñoBoton:hover #span3{
+	    right: 100%;
+	    transition: 1s;
+	    transition-delay: 0.25s;
+	}
+
+
+
+	 /*  Linea de arriba hacia abajo */
+	#span2{
+	    top: -100%;
+	    right: 0;
+	    width: 2px;
+	    height: 100%;
+	    background: linear-gradient(180deg,transparent,#043C8A);
+	}
+
+	/*  Lineas de transición */
+	.DiseñoBoton:hover #span2{
+	    top: 100%;
+	    transition: 0.5s;
+	    transition-delay: 0.125s;
+	}
+
+
+
+	 /*  Linea de transición */
+	#span4{
+	    bottom: -100%;
+	    left: 0;
+	    width: 2px;
+	    height: 100%;
+	    background: linear-gradient(360deg,transparent,#043C8A);
+	}
+
+	 /*  Linea de transición */
+	.DiseñoBoton:hover #span4{
+	    bottom: 100%;
+	    transition: 0.3s;
+	    transition-delay: 0.5s;
+	}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+
+
+
+
+
+
+
+
+
+ 	/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+ 	/* Diseño para el boton del portafolio */
+	/* Propiedades para el link de direccionamiento para una página */
+ 	
+	/*  Diseño del botón */
+ 	.DiseñoBotonPortafolio{
+    position: relative;
+    display: inline-block;
+    
+    color: #fff;
+
+    /*  Espacio entre letras */
+    letter-spacing: 1px;
+    /* Se elimna el subrayado por defecto  */
+    text-decoration: none;
+
+    /*  Tamaño del texto */
+    font-size: 12px;
+
+    /* Oculta los elementos que estan afuera del contenedor  */
+    overflow: hidden;
+
+    /*  Tiempo del efecto */
+    transition: 0.1s;
+ 
+    /*  Color para resaltar el texto del botón*/
+    background-color:#AD5F11;
+	
+}
+
+
+
+	/*  Color del fondo del efecto */
+	.DiseñoBotonPortafolio:hover{
+	    background: #AB891A;
+
+
+	    /*  Sombra */
+	    box-shadow: 0 0 40px #AB891A, 0 0 40px #AB891A, 0 0 80px #AB891A;
+	   
+	   /*  Tiemp de transición  */
+	    transition-delay: 0.5s;
+	 }
+
+
+	 /* Propiedades de span */
+	.DiseñoBotonPortafolio span{
+	    position: absolute;
+	    display: block;
+	}
+
+
+	/*  Propiedas de span 1  */
+	#span1{
+	    top: 0;
+	    left: -100%;
+	    width: 100%;
+	    height: 2px;
+	    background: linear-gradient(90deg, transparent,#AB891A);
+	 }
+
+
+	 /*  Lineas de transición */
+	 .DiseñoBotonPortafolio:hover #span1{
+	    left: 100%;
+	    transition: 0.5s;
+	}
+
+
+
+
+
+	/*  Linea de derecha a izquierda */
+	 #span3{
+	    bottom: 0;
+	    right: -100%;
+	    width: 100%;
+	    height: 2px;
+	    background: linear-gradient(270deg, transparent,#AB891A);
+	}
+
+	/*  Lineas de transición */
+	 .DiseñoBotonPortafolio:hover #span3{
+	    right: 100%;
+	    transition: 1s;
+	    transition-delay: 0.25s;
+	}
+
+
+
+	 /*  Linea de arriba hacia abajo */
+	#span2{
+	    top: -100%;
+	    right: 0;
+	    width: 2px;
+	    height: 100%;
+	    background: linear-gradient(180deg,transparent,#AB891A);
+	}
+
+	/*  Lineas de transición */
+	.DiseñoBotonPortafolio:hover #span2{
+	    top: 100%;
+	    transition: 0.5s;
+	    transition-delay: 0.125s;
+	}
+
+
+
+	 /*  Linea de transición */
+	#span4{
+	    bottom: -100%;
+	    left: 0;
+	    width: 2px;
+	    height: 100%;
+	    background: linear-gradient(360deg,transparent,#AB891A);
+	}
+
+	 /*  Linea de transición */
+	.DiseñoBotonPortafolio:hover #span4{
+	    bottom: 100%;
+	    transition: 0.3s;
+	    transition-delay: 0.5s;
+	}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+
+
+
+
+
+
+
+
+
+ 	/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+ 	/* Diseño para el boton del udemy */
+	/* Propiedades para el link de direccionamiento para una página */
+ 	
+	/*  Diseño del botón */
+ 	.DiseñoBotonUdemy{
+    position: relative;
+    display: inline-block;
+    
+    color: #fff;
+
+    /*  Espacio entre letras */
+    letter-spacing: 1px;
+    /* Se elimna el subrayado por defecto  */
+    text-decoration: none;
+
+    /*  Tamaño del texto */
+    font-size: 12px;
+
+    /* Oculta los elementos que estan afuera del contenedor  */
+    overflow: hidden;
+
+    /*  Tiempo del efecto */
+    transition: 0.1s;
+ 
+    /*  Color para resaltar el texto del botón*/
+    background-color:#B327E6;
+	
+}
+
+
+
+	/*  Color del fondo del efecto */
+	.DiseñoBotonUdemy:hover{
+	    background: #4c2882 ;
+
+
+	    /*  Sombra */
+	    box-shadow: 0 0 40px #4c2882, 0 0 40px #4c2882, 0 0 80px #4c2882;
+	   
+	   /*  Tiemp de transición  */
+	    transition-delay: 0.5s;
+	 }
+
+
+	 /* Propiedades de span */
+	.DiseñoBotonUdemy span{
+	    position: absolute;
+	    display: block;
+	}
+
+
+	/*  Propiedas de span 1  */
+	#span1{
+	    top: 0;
+	    left: -100%;
+	    width: 100%;
+	    height: 2px;
+	    background: linear-gradient(90deg, transparent,#4c2882);
+	 }
+
+
+	 /*  Lineas de transición */
+	 .DiseñoBotonUdemy:hover #span1{
+	    left: 100%;
+	    transition: 0.5s;
+	}
+
+
+
+
+
+	/*  Linea de derecha a izquierda */
+	 #span3{
+	    bottom: 0;
+	    right: -100%;
+	    width: 100%;
+	    height: 2px;
+	    background: linear-gradient(270deg, transparent,#4c2882);
+	}
+
+	/*  Lineas de transición */
+	 .DiseñoBotonUdemy:hover #span3{
+	    right: 100%;
+	    transition: 1s;
+	    transition-delay: 0.25s;
+	}
+
+
+
+	 /*  Linea de arriba hacia abajo */
+	#span2{
+	    top: -100%;
+	    right: 0;
+	    width: 2px;
+	    height: 100%;
+	    background: linear-gradient(180deg,transparent,#4c2882);
+	}
+
+	/*  Lineas de transición */
+	.DiseñoBotonUdemy:hover #span2{
+	    top: 100%;
+	    transition: 0.5s;
+	    transition-delay: 0.125s;
+	}
+
+
+
+	 /*  Linea de transición */
+	#span4{
+	    bottom: -100%;
+	    left: 0;
+	    width: 2px;
+	    height: 100%;
+	    background: linear-gradient(360deg,transparent,#4c2882);
+	}
+
+	 /*  Linea de transición */
+	.DiseñoBotonUdemy:hover #span4{
+	    bottom: 100%;
+	    transition: 0.3s;
+	    transition-delay: 0.5s;
+	}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+
+
+
+
+
+
+
+
+
+	.Index{
+	width: 100%;
+	}
+
+
+	.proyecto_titulo{
+		color:#C40808;
+		font-size: 18px;
+	}
+
+	.proyecto_descripcion{
+		color:#C40808;
+		font-size: 18px;
+	}
+
+
+	.view-proyecto{
+	    margin-left: 350px;
+	    padding: 1em;
+	}
+
+
+
+	/* Cuando @media sea verdadero ejecutárá los siguiente */
+	@media screen and (max-width: 1100px) {
+		
+		.informacion{
+			position: relative;
+		}
+		
+		.lateral{
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+		
+		.proyectos{
+			margin-left: 0px;
+			width: 100%;
+		}
+
+
+		.proyectosCV{
+			margin-left: 0%;
+		    width: 100%;
+		    height: calc(100vh - 3px) !important;
+		}
+
+
+
+
+
+
+
+
+
+	/* Texto adentro de imagen khan academy y udemy*/
+	.TextoEnImagen {
+	  background-color: rgba(255, 255, 255, 0.3);
+	  border-radius: 10px;
+	  font-family: sans-serif;
+	  text-align: center;
+
+	 /*Propiedades para mostrar el texto adentro de la imagen de forma difuminido*/
+	  backdrop-filter: blur(7px);
+	  -webkit-backdrop-filter: blur(10px);
+
+
+	  border: 2px solid #043C8A;
+	  color: blue;
+	  position: relative;
+	  left: 50%;
+
+	  /* Posicion del texto adentro de la imagen  */
+	  transform: translate(-50%, -225%);
+	  text-align: center;
+
+	}
+
+
+
+
+
+	/* Texto adentro de imagen curriculum vitae*/
+	.TextoEnImagenCV {
+	  background-color: rgba(255, 255, 255, 0.3);
+	  border-radius: 10px;
+	  font-family: sans-serif;
+	  width: 50%;
+ 		height: 50%;
+
+	 /*Propiedades para mostrar el texto adentro de la imagen de forma difuminido*/
+	  backdrop-filter: blur(7px);
+	  -webkit-backdrop-filter: blur(10px);
+
+
+	  border: 2px solid #043C8A;
+	  color: blue;
+	  position: relative;
+	  left: 50%;
+
+
+	   /* Posicion del texto adentro de la imagen  */
+	  transform: translate(-100%, -255%);
+	  text-align: center;
+
+	}
+
+
+
+
+
+
+		.Principal{
+		    margin-left: 0%;
+		    width: 100%;
+		    height: calc(100vh - 3px) !important;
+		}
+	}
+
+
+	/* Cuando @media sea verdadero ejecutárá los siguiente */
+	@media screen and (max-width: 600px) {
+		
+		.Index{
+			width: 100%;
+		}
+
+		.informacion{
+			position: relative;
+		}
+
+		.perfil_nombres{
+			position: relative;
+		}
+		
+		.proyecto{
+			width: 100%;
+			display: block;
+		}
+
+		.proyectos{
+			margin-left: 0;
+			width: 100%;
+		}
+
+		.proyectosCV{
+			margin-left: 0%;
+		    height: 100%;
+		    width: calc(100vh - 20px) !important;
+		}
+
+
+
+
+			/* Texto adentro de imagen curriculum vitae*/
+	.TextoEnImagenCV {
+	  background-color: rgba(255, 255, 255, 0.3);
+	  border-radius: 10px;
+	  font-family: sans-serif;
+	  width: 50%;
+ 		height: 50%;
+
+	 /*Propiedades para mostrar el texto adentro de la imagen de forma difuminido*/
+	  backdrop-filter: blur(7px);
+	  -webkit-backdrop-filter: blur(10px);
+
+
+	  border: 2px solid #043C8A;
+	  color: blue;
+	  position: relative;
+	  left: 50%;
+
+
+	   /* Posicion del texto adentro de la imagen  */
+	  transform: translate(-100%, -145%);
+	  text-align: center;
+
+	}
+
+
+
+		.Principal{
+		    margin-left: 0%;
+		    width: 100%;
+		    height: calc(100vh - 3px) !important;
+		}
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+	/* --------------------------------------------------------------- */
+	/* Diseño para el encabezado de Khan Academy */
+	/* Propiedad para el diseño del encabezado*/
+	header{
+		
+	    color: #fff;
+	   border-radius: 60px;
+
+	}
+
+	/* Propiedad del logo */
+	.LogoKhanAcademy{
+		height: 70px;
+
+	}
+
+	/* Propiedades para el fondo y diseño del titulo*/
+	.TituloPorSeccion{
+
+		/* Degradado */
+		background: linear-gradient(45deg,green, blue, black);
+	   background-size: 400% 400%;
+
+	    padding: 1%;
+	    text-align: center;
+	    font-size: 1.5em;
+	    
+	}
+
+
+
+
+
+	/* --------------------------------------------------------------- */
+	/* Diseño para el encabezado de Udemy */
+	/* Propiedad para el diseño del encabezado*/
+	header{
+		
+	    color: #fff;
+	   border-radius: 60px;
+
+	}
+
+	/* Propiedad del logo */
+	.LogoUdemy{
+		height: 70px;
+
+	}
+
+	/* Propiedades para el fondo y diseño del titulo*/
+	.TituloPorSeccionUdemy{
+
+		/* Degradado */
+		background: linear-gradient(45deg,#7D3171, #5138EB, black);
+	   background-size: 400% 400%;
+
+	    padding: 1%;
+	    text-align: center;
+	    font-size: 1.5em;
+	    
+	}
+
+
+
+
+
+
+
+
+	/* --------------------------------------------------------------- */
+	/* Diseño para el encabezado de Curriculum vitae */
+	
+
+	/* Propiedad del logo */
+	.LogoCVGerson{
+		height: 70px;
+
+	}
+
+	/* Propiedades para el fondo y diseño del titulo*/
+	.TituloPorSeccionCV{
+
+		/* Degradado */
+		background: linear-gradient(45deg,#854403, #D4AF37, black);
+	   background-size: 400% 400%;
+
+	    padding: 1%;
+	    text-align: center;
+	    font-size: 1.5em;
+	    
+	}
+
+
+	.proyecto_imagenCV {
+ 		width: 50%;
+ 		height: 50%;
+ 	}
+
+
+
+
+
+
+
+
+
+
+
+ 	 #TextoBoton{
+    	 font-family: Kdam Thmor Pro;
+   		 color: #FFFFFF;
+    }
+   
+ 	/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+ 	/* Diseño para el boton del regresar al inicio */
+	/* Propiedades para el link de direccionamiento para una página */
+ 	
+
+	/*  Diseño del botón */
+ 	.Diseño_Volver_Al_Inicio{
+    position: relative;
+    display: inline-block;
+
+
+    margin-left: 350px;
+   
+
+    /* Borde del botón  */
+    border-radius: 15px;
+
+    /* Ancho del botón */
+    width: 30%;
+
+     /* Altura del botón */
+     height: calc(7.5vh - 0px) !important;
+
+
+    /*  Espacio entre letras */
+    letter-spacing: 1.5px;
+    /* Se elimna el subrayado por defecto  */
+    text-decoration: none;
+
+    /*  Tamaño del texto */
+     font-size: 20px;
+
+    /* Oculta los elementos que estan afuera del contenedor  */
+    overflow: hidden;
+
+    /*  Tiempo del efecto */
+    transition: 0.2s;
+ 
+    /*  Color para resaltar el texto del botón*/
+    background-color:#043C8A;
+
+    
+}
+
+
+
+	/*  Color del fondo del efecto */
+	.Diseño_Volver_Al_Inicio:hover{
+	    background: #6E6E6E;
+    box-shadow: 0 0 10px #6E6E6E, 0 0 40px #6E6E6E, 0 0 80px #6E6E6E;
+    transition-delay: 1s;
+	 }
+
+
+	 /* Propiedades de span */
+	.Diseño_Volver_Al_Inicio span{
+	     position: absolute;
+    display: block;
+	}
+
+
+	/*  Propiedas de span 1  */
+	#span1{
+	    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent,#6E6E6E);
+	 }
+
+
+	 /*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span1{
+	     left: 100%;
+    transition: 1s;
+	}
+
+
+
+
+
+	/*  Linea de derecha a izquierda */
+	 #span3{
+	    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent,#6E6E6E);
+}
+
+	/*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span3{
+	 right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+	}
+
+
+
+	 /*  Linea de arriba hacia abajo */
+	#span2{
+	    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#6E6E6E);
+
+	   }
+
+	/*  Lineas de transición */
+	.Diseño_Volver_Al_Inicio:hover #span2{
+	    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+	}
+
+
+
+	 /*  Linea de transición */
+	#span4{
+	   bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#6E6E6E);
+
+	   }
+
+	 /*  Linea de transición */
+	.DiseñoBotonUdemy:hover #span4{
+	    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+	}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+
+
+
+
+
+ 
+
+/* Cuando @media sea verdadero ejecutárá los siguiente */
+	@media screen and (max-width: 1100px) {
+
+	.ResponsiveUdemy {
+
+ 	margin-left: 0px;
+ 	width: auto;
+ 	}
+
+	
+
+
+
+ 	/*  Diseño del botón */
+ 	.Diseño_Volver_Al_Inicio{
+    position: relative;
+    display: inline-block;
+   
+
+    /* Borde del botón  */
+    border-radius: 15px;
+
+    /* Ancho del botón */
+    width: 80%;
+
+
+    margin-left: 0px;
+
+     /* Altura del botón */
+     height: calc(7.5vh - 0px) !important;
+
+
+    /*  Espacio entre letras */
+    letter-spacing: 1.5px;
+    /* Se elimna el subrayado por defecto  */
+    text-decoration: none;
+
+    /*  Tamaño del texto */
+      font-size: 20px;
+
+    /* Oculta los elementos que estan afuera del contenedor  */
+    overflow: hidden;
+
+    /*  Tiempo del efecto */
+    transition: 0.2s;
+ 
+    /*  Color para resaltar el texto del botón*/
+    background-color:#043C8A;
+
+    
+}
+
+
+
+	/*  Color del fondo del efecto */
+	.Diseño_Volver_Al_Inicio:hover{
+	    background: #6E6E6E;
+    box-shadow: 0 0 10px #6E6E6E, 0 0 40px #6E6E6E, 0 0 80px #6E6E6E;
+    transition-delay: 1s;
+	 }
+
+
+	 /* Propiedades de span */
+	.Diseño_Volver_Al_Inicio span{
+	     position: absolute;
+    display: block;
+	}
+
+
+	/*  Propiedas de span 1  */
+	#span1{
+	    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent,#6E6E6E);
+	 }
+
+
+	 /*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span1{
+	     left: 100%;
+    transition: 1s;
+	}
+
+
+
+
+
+	/*  Linea de derecha a izquierda */
+	 #span3{
+	    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent,#6E6E6E);
+}
+
+	/*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span3{
+	 right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+	}
+
+
+
+	 /*  Linea de arriba hacia abajo */
+	#span2{
+	    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#6E6E6E);
+
+	   }
+
+	/*  Lineas de transición */
+	.Diseño_Volver_Al_Inicio:hover #span2{
+	    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+	}
+
+
+
+	 /*  Linea de transición */
+	#span4{
+	   bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#6E6E6E);
+
+	   }
+
+	 /*  Linea de transición */
+	.DiseñoBotonUdemy:hover #span4{
+	    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+	}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+
+
+
+
+ 

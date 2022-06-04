@@ -1,0 +1,316 @@
+
+ 	.ResponsiveUdemy {
+ 	margin-left: 360px;
+
+ 	/* Espacio entre el contenido del elemento y su borde   */
+ 	padding: 1em;
+	
+
+ 	}
+
+
+ 	 #TextoBoton{
+    	 font-family: Kdam Thmor Pro;
+   		 color: #FFFFFF;
+    }
+   
+ 	/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+ 	/* Diseño para el boton del regresar al inicio */
+	/* Propiedades para el link de direccionamiento para una página */
+ 	
+
+	/*  Diseño del botón */
+ 	.Diseño_Volver_Al_Inicio{
+    position: relative;
+    display: inline-block;
+   
+
+    /* Borde del botón  */
+    border-radius: 15px;
+
+    /* Ancho del botón */
+    width: 80%;
+
+     /* Altura del botón */
+     height: calc(6.5vh - 0px) !important;
+
+
+    /*  Espacio entre letras */
+    letter-spacing: 1.5px;
+    /* Se elimna el subrayado por defecto  */
+    text-decoration: none;
+
+    /*  Tamaño del texto */
+     font-size: 25px;
+
+    /* Oculta los elementos que estan afuera del contenedor  */
+    overflow: hidden;
+
+    /*  Tiempo del efecto */
+    transition: 0.2s;
+ 
+    /*  Color para resaltar el texto del botón*/
+    background-color:#043C8A;
+
+    
+}
+
+
+
+	/*  Color del fondo del efecto */
+	.Diseño_Volver_Al_Inicio:hover{
+	    background: #6E6E6E;
+    box-shadow: 0 0 10px #6E6E6E, 0 0 40px #6E6E6E, 0 0 80px #6E6E6E;
+    transition-delay: 1s;
+	 }
+
+
+	 /* Propiedades de span */
+	.Diseño_Volver_Al_Inicio span{
+	     position: absolute;
+    display: block;
+	}
+
+
+	/*  Propiedas de span 1  */
+	#span1{
+	    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent,#6E6E6E);
+	 }
+
+
+	 /*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span1{
+	     left: 100%;
+    transition: 1s;
+	}
+
+
+
+
+
+	/*  Linea de derecha a izquierda */
+	 #span3{
+	    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent,#6E6E6E);
+}
+
+	/*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span3{
+	 right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+	}
+
+
+
+	 /*  Linea de arriba hacia abajo */
+	#span2{
+	    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#6E6E6E);
+
+	   }
+
+	/*  Lineas de transición */
+	.Diseño_Volver_Al_Inicio:hover #span2{
+	    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+	}
+
+
+
+	 /*  Linea de transición */
+	#span4{
+	   bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#6E6E6E);
+
+	   }
+
+	 /*  Linea de transición */
+	.DiseñoBotonUdemy:hover #span4{
+	    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+	}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+
+
+
+
+
+ 
+
+/* Cuando @media sea verdadero ejecutárá los siguiente */
+	@media screen and (max-width: 1100px) {
+
+	.ResponsiveUdemy {
+
+ 	margin-left: 0px;
+ 	width: auto;
+ 	}
+
+	
+
+
+
+ 	/*  Diseño del botón */
+ 	.Diseño_Volver_Al_Inicio{
+    position: relative;
+    display: inline-block;
+   
+
+    /* Borde del botón  */
+    border-radius: 15px;
+
+    /* Ancho del botón */
+    width: 80%;
+
+     /* Altura del botón */
+     height: calc(6.5vh - 0px) !important;
+
+
+    /*  Espacio entre letras */
+    letter-spacing: 1.5px;
+    /* Se elimna el subrayado por defecto  */
+    text-decoration: none;
+
+    /*  Tamaño del texto */
+     font-size: 25px;
+
+    /* Oculta los elementos que estan afuera del contenedor  */
+    overflow: hidden;
+
+    /*  Tiempo del efecto */
+    transition: 0.2s;
+ 
+    /*  Color para resaltar el texto del botón*/
+    background-color:#043C8A;
+
+    
+}
+
+
+
+	/*  Color del fondo del efecto */
+	.Diseño_Volver_Al_Inicio:hover{
+	    background: #6E6E6E;
+    box-shadow: 0 0 10px #6E6E6E, 0 0 40px #6E6E6E, 0 0 80px #6E6E6E;
+    transition-delay: 1s;
+	 }
+
+
+	 /* Propiedades de span */
+	.Diseño_Volver_Al_Inicio span{
+	     position: absolute;
+    display: block;
+	}
+
+
+	/*  Propiedas de span 1  */
+	#span1{
+	    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent,#6E6E6E);
+	 }
+
+
+	 /*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span1{
+	     left: 100%;
+    transition: 1s;
+	}
+
+
+
+
+
+	/*  Linea de derecha a izquierda */
+	 #span3{
+	    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent,#6E6E6E);
+}
+
+	/*  Lineas de transición */
+	 .Diseño_Volver_Al_Inicio:hover #span3{
+	 right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+	}
+
+
+
+	 /*  Linea de arriba hacia abajo */
+	#span2{
+	    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#6E6E6E);
+
+	   }
+
+	/*  Lineas de transición */
+	.Diseño_Volver_Al_Inicio:hover #span2{
+	    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+	}
+
+
+
+	 /*  Linea de transición */
+	#span4{
+	   bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#6E6E6E);
+
+	   }
+
+	 /*  Linea de transición */
+	.DiseñoBotonUdemy:hover #span4{
+	    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+	}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  */
+
+
+
+
+
+	}
+
+/* Cuando @media sea verdadero ejecutárá los siguiente */
+	@media screen and (max-width: 600px) {
+		.ResponsiveUdemy {
+			margin-left: 0;
+			width: auto;
+		}
+	}
+
+
+
